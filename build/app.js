@@ -16,6 +16,7 @@ const fastify_1 = __importDefault(require("fastify"));
 const app = (opts = {}) => {
     const server = (0, fastify_1.default)(opts);
     server.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () { return 'Welcome to Fastify app'; }));
+    server.get('/name', (req, res) => __awaiter(void 0, void 0, void 0, function* () { return 'Fastify'; }));
     return server;
 };
 exports.default = app;
