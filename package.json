@@ -1,0 +1,26 @@
+{
+  "name": "fastify",
+  "version": "1.0.0",
+  "description": "learning fastify",
+  "main": "app.js",
+  "scripts": {
+    "start": "node build/server.js",
+    "dev": "tsc-watch --onSuccess \"nodemon build/server.js\""
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fastify": "^4.9.2",
+    "fastify-plugin": "^4.3.0",
+    "fastify-swagger": "^5.2.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.2",
+    "nodemon": "^2.0.20",
+    "pino-pretty": "^9.1.1",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.8.4"
+  }
+}
